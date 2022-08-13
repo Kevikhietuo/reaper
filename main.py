@@ -6,7 +6,7 @@ if __name__ == "__main__":
     win = Tk()
     win.geometry("990x450") #window size
     def selectFile():
-        path= filedialog.askopenfilename(title="Select a File", filetype=(('text files''*.txt'),('all files','*.*')))
+        path= filedialog.askdirectory()
         Label(win, text=path, font=13).pack()
     
     Label(win, text="SELECT THE FOLDER INSIDE WHICH YOUR REFERENCE PAPERS ARE STORED", font=('Times 12 bold')).pack(pady=20)
