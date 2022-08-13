@@ -1,13 +1,9 @@
 import DFimport
-import pandas as pd
 import tkinter.font as font
 
 
 from tkinter import *
-from tkinter import ttk
 from tkinter import filedialog
-from fileinput import filename
-from importlib.resources import path
 
 
 def selectFile():
