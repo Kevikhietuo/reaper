@@ -1,4 +1,7 @@
+import DFimport
+import pandas as pd
 import tkinter.font as font
+
 
 from tkinter import *
 from tkinter import ttk
@@ -24,7 +27,6 @@ if __name__ == "__main__":
     win = Tk()
     win.geometry("990x450") #window size
     win["bg"] = "cornsilk"
-    myPath = StringVar() #soon-to-be global var
     
     Label(win, text="Select the folder inside which your reference papers are stored", font=('Times 15'), bg='cornsilk').pack(pady=50)
     custFont = font.Font(family='Times')
@@ -34,4 +36,4 @@ if __name__ == "__main__":
     button.pack()
 
     win.mainloop()
-    print(pathName)
+    DFimport.dfImport(pathName)
