@@ -12,4 +12,4 @@ def metadataImport(pathName):
             info = pdf.getDocumentInfo()
 
             insertData.insert_data(info)
-        print("CURRENT FILE DONE \n\n")
+        print("CURRENT FILE DONE \n")
