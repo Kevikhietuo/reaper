@@ -2,6 +2,6 @@
 reaper - a way to organize reference research papers.
 
 
-##REQUIREMENTS
+## REQUIREMENTS
 pandas
 tkinter
