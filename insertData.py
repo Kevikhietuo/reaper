@@ -8,7 +8,7 @@ def insert_data(info, pathName):
     myPath = str(pathName) + "/" + filename
     print("THE PATH IS: ", myPath)
     
-    if not (os.path.isfile(myPath)): #file does not exists
+    if not (os.path.isfile(myPath)): #file does not exists in directory
         headers = ['author', 'creator', 'producer', 'subject', 'title']
 
         with open(myPath, 'w', newline='') as csvfile:
@@ -16,6 +16,7 @@ def insert_data(info, pathName):
             csvwriter.writerow(headers)
             csvfile.close()
     
+    #pdf metadata
     row = [info.author, info.creator, info.producer, info.subject, info.title]
     
     with open(myPath, 'a+', newline='') as write_obj:
