@@ -13,7 +13,7 @@ def selectFile():
     showButton()
 
 def finishTask():
-    print("IT IS DONE")
+    win.destroy()
 
 def showButton():
     finishButton = Button( text="FINISH", height=2,width=8, fg='white', bg='green', bd=3, relief=GROOVE, activebackground='forest green', command=finishTask)
