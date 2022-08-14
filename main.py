@@ -1,4 +1,4 @@
-import DFimport
+import MDimport
 import tkinter.font as font
 
 
@@ -32,4 +32,4 @@ if __name__ == "__main__":
     button.pack()
 
     win.mainloop()
-    DFimport.dfImport(pathName)
+    MDimport.metadataImport(pathName)

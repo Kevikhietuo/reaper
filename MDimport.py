@@ -1,7 +1,7 @@
 import glob
 from PyPDF2 import PdfFileReader
 
-def dfImport(pathName):
+def metadataImport(pathName):
     pdfFiles = glob.glob(pathName + '/*.pdf')
     dir = pdfFiles[0]
 
