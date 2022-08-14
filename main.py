@@ -10,6 +10,7 @@ def selectFile():
     global pathName
     pathName = filedialog.askdirectory()
     Label(win, text=pathName, font=('Times 15')).pack()
+    showButton()
 
 def finishTask():
     print("IT IS DONE")
